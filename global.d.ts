@@ -1,0 +1,1 @@
+declare function styled(styles: TemplateStringsArray): string;
