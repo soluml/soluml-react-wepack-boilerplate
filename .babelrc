@@ -1,0 +1,4 @@
+{
+  "presets": ["@babel/env", "@babel/preset-react", "@babel/stage-3", "@babel/typescript"],
+  "plugins": ["react-hot-loader/babel"]
+}

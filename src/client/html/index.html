@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Content-Language" content="en_US">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#0071ba">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+      <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[css] %>">
+    <% } %>
+    <link rel="manifest" href="/manifest.json">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Allow JavaScript for a better experience!</noscript>
+    <% for (var js in htmlWebpackPlugin.files.js) { %>
+      <% if (!htmlWebpackPlugin.files.js[js].startsWith('sprites.')) { %>
+        <script src="<%= htmlWebpackPlugin.files.js[js] %>"></script>
+      <% } %>
+    <% } %>
+  </body>
+</html>
