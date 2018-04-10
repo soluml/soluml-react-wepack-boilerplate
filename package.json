@@ -10,9 +10,10 @@
     "build-dev": "BABEL_ENV=client webpack",
     "prebuild": "npm run clean",
     "build": "BABEL_ENV=client webpack -p",
-    "pretest": "npm run typecheck",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"src/**/*.scss\" && eslint --ext .tsx,.ts src/",
     "typecheck": "tsc",
+    "pretest": "npm run typecheck",
+    "test": "echo \"Error: no test specified\"",
     "prestart": "npm run clean",
     "start": "BABEL_ENV=client webpack-dev-server",
     "prepush": "npm test"
