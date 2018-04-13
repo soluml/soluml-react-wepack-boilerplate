@@ -27,6 +27,7 @@
     "no-underscore-dangle": 0,
     "default-case": 0,
     "import/extensions": 0,
+    "import/no-unresolved": 0,
     "newline-per-chained-call": 0,
     "react/prefer-stateless-function": 0,
     "react/prefer-es6-class": 1,
