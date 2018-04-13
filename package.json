@@ -12,7 +12,7 @@
     "build": "BABEL_ENV=client webpack -p",
     "lint": "stylelint \"src/**/*.scss\" && eslint --ext .tsx,.ts src/",
     "typecheck": "tsc",
-    "pretest": "npm run typecheck",
+    "pretest": "npm run typecheck && npm run lint",
     "test": "echo \"Error: no test specified\"",
     "prestart": "npm run clean",
     "start": "BABEL_ENV=client webpack-dev-server",
@@ -47,7 +47,6 @@
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.8.3",
     "postcss-loader": "^2.1.3",
-    "react-hot-loader": "^4.0.1",
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
@@ -68,7 +67,8 @@
   },
   "dependencies": {
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "react-hot-loader": "^4.0.1"
   },
   "resolutions": {
     "**/@types/react": "16.3.1",

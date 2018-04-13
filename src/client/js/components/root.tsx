@@ -7,6 +7,8 @@ const attrs = {
   `
 };
 
-export default () => (<div {...attrs}>
-  Root!!!?
-</div>);
+export default () => (
+  <div {...attrs}>
+    Root!!!?
+  </div>
+);
