@@ -1,7 +1,7 @@
 {
   "env": {
     "client": {
-      "presets": ["@babel/env", "@babel/preset-react", "@babel/stage-3", "@babel/typescript"],
+      "presets": ["@babel/env", "@babel/preset-react", "@babel/stage-1", "@babel/stage-2", "@babel/stage-3"],
       "plugins": [
         "react-hot-loader/babel",
         ["pre-style", { "config": "prestyle.js" }]
