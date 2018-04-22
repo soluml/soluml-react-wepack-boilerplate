@@ -1,8 +1,9 @@
 {
   "env": {
     "client": {
-      "presets": ["@babel/env", "@babel/preset-react", "@babel/stage-1", "@babel/stage-2", "@babel/stage-3"],
+      "presets": ["@babel/env", "@babel/preset-react", "@babel/stage-3"],
       "plugins": [
+        "syntax-optional-chaining",
         "react-hot-loader/babel",
         ["pre-style", { "config": "prestyle.js" }]
       ]

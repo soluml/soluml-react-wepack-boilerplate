@@ -30,6 +30,7 @@
     "babel-eslint": "^8.2.3",
     "babel-loader": "^8.0.0-beta.2",
     "babel-plugin-pre-style": "^1.0.9-alpha",
+    "babel-plugin-syntax-optional-chaining": "^7.0.0-alpha.13",
     "css-loader": "^0.28.11",
     "cssnano": "^3.10.0",
     "eslint": "^4.19.1",
