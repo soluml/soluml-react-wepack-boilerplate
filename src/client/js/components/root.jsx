@@ -7,6 +7,8 @@ const attrs = {
   `
 };
 
+console.log(attrs.profile?.name?.firstName);
+
 export default () => (
   <div {...attrs}>
     Root!!!?
